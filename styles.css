@@ -33,7 +33,6 @@ p, h1, h2, h3, h4, h5, h6 {
   overflow-wrap: break-word;
   font-style: normal;
   font-optical-sizing: auto;
-  letter-spacing: .25rem;
 }
 
 
@@ -80,7 +79,7 @@ body {
   font-family: var(--font-sans);
   font-size: var(--text-base);
   color: var(--color-text);
-  background: var(--color-bg) url("images/Desktop-Home.png") 50% 0 no-repeat;
+  /*background: var(--color-bg) url("images/Desktop-Home.png") 50% 0 no-repeat;*/
 }
 
 a {
@@ -134,18 +133,19 @@ Black 900 Italic
   margin-top: 0;
 }
 
-/*.edge-to-edge {
-  background: #2E2E2D;
-}*/
+.edge-to-edge {
+  background: #2E2E2D; 
+}
 
 header {
   width: 80rem;
   margin-inline: auto;
-  padding-inline: var(--space-8);
+  padding-inline: var(--space-10);
   padding-top: 94px;
+  margin-bottom: 94px;
 }
 
-header h1, h2, h3, h4 {
+header h1, header h2, header h3, header h4 {
   color: #FFFDF4;
 }
 
@@ -153,14 +153,16 @@ header h1 {
   font-weight: 200;
   font-size: 2.25rem;
   line-height: 2.4rem;
+  letter-spacing: .25rem;
 }
 
 header h2 {
   font-weight: 400;
   font-size: 1.125rem;
-  line-height: 2.625rem;
-  padding-top: 30px;
+  line-height: 2.2rem;
+  padding-top: 32px;
   padding-bottom: 153px;
+  letter-spacing: .05rem;
 }
 
 header h3 {
@@ -168,11 +170,13 @@ header h3 {
   font-size: 2.2rem;
   line-height: 2.6rem;
   text-transform: uppercase;
-
+  letter-spacing: .25rem;
 }
 header h4 {
   font-weight: 300;
   font-size: 0.875;
+  line-height: 1.3rem;
+  letter-spacing: .25rem;
 }
 
 .logo a {
@@ -180,7 +184,7 @@ header h4 {
 }
 
 .logo {
-  padding-bottom: 148px;
+  padding-bottom: 154px;
   width: 80%;
   float: left;
 }
@@ -188,11 +192,118 @@ header h4 {
 nav {
   width: 20%;
   float: left;
+  text-align: right;
+}
+
+nav a {
   font-weight: 100;
   font-size: 2.4rem;
   line-height: 2.625rem;
-  color: #DFBA16;
-  text-align: right;
+  color: #DFBA16; 
+}
+
+
+section {
+  width: 80rem;
+  margin-inline: auto;
+  padding-inline: var(--space-10);
+}
+
+section h2 {
+  font-weight: 100;
+  font-size: 2rem;
+  line-height: 2.625rem;
+  letter-spacing: 0.044rem;
+}
+
+.callout {
+  padding: 84px 0 0 0;
+  clear: both;
+}
+
+cite {
+  font-weight: 100;
+  font-size: 61px;
+  line-height: 88px;
+  letter-spacing: 3px;
+  color: #75620D;
+  font-style: normal;
+  padding: 30px 0;
+}
+
+section p {
+  padding-top: 1.875rem;
+  padding-bottom: 0.625rem;
+  font-weight: 400;
+  font-size: 1.325rem;
+  line-height: 2.7rem;
+  letter-spacing: 0.006rem;
+}
+
+hr {
+  width: 100%;
+  height: height-value;
+  border: 1px solid #C1BA9C;
+  clear: both;
+  margin: 73px 0 70px 0;
+}
+
+.project {
+  padding: 29px 0 0 0;
+  clear: both;
+}
+
+.left-column {
+  float: left;
+  width: 13%;
+}
+
+.left-column img {
+  padding: 14px 0 0 0;
+}
+
+
+.right-column {
+  float: left;
+  width: 87%;
+}
+
+.right-column h6 {
+  font-weight: 700;
+  font-size: 1.35rem;
+  line-height: 2.625rem;
+}
+
+.right-column p {
+  font-weight: 400;
+  font-size: 1.35rem;
+  line-height: 2.625rem;
+  letter-spacing: 0px;
+  padding: 0;
+}
+
+footer {
+  width: 80rem;
+  margin-inline: auto;
+  padding-inline: var(--space-10);
+  padding-top: 94px;
+  padding-bottom: 30px;
+}
+
+#copyright {
+  overflow-wrap: break-word;
+  font-style: normal;
+  font-optical-sizing: auto;
+  float: left;
+  width: 15%;
+}
+
+#footerlinks {
+  overflow-wrap: break-word;
+  font-style: normal;
+  font-optical-sizing: auto;
+  float: left;
+  width: 20%;
 }
 
 .stack > * + * {
