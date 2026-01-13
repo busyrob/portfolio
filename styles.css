@@ -207,7 +207,7 @@ nav a {
 section {
   width: 100%;
   margin-inline: auto;
-  padding-inline: var(--space-10);
+  /* padding-inline: var(--space-10); */
 }
 
 section h2 {
@@ -387,4 +387,5 @@ footer {
   clip: rect(0, 0, 0, 0);
   white-space: nowrap;
   border: 0;
+
 }
