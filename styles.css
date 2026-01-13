@@ -138,7 +138,8 @@ Black 900 Italic
 }
 
 header {
-  width: 80rem;
+  /*width: 80rem;*/
+  width: 100%;
   margin-inline: auto;
   padding-inline: var(--space-10);
   padding-top: 94px;
@@ -204,7 +205,7 @@ nav a {
 
 
 section {
-  width: 80rem;
+  width: 100%;
   margin-inline: auto;
   padding-inline: var(--space-10);
 }
@@ -259,9 +260,19 @@ hr {
 }
 
 .left-column img {
-  padding: 14px 0 0 0;
+  padding-top: 14px;
+  float: left;
 }
 
+.sideimage {
+  padding-left: 30px;
+}
+
+@media screen and (width <= 420px) {
+  .sideimage {
+    padding-left: 0px;
+  }
+}
 
 .right-column {
   float: left;
@@ -282,8 +293,20 @@ hr {
   padding: 0;
 }
 
+
+
+@media screen and (width <= 600px) {
+  .left-column {
+    width: 25%;
+  }
+  
+  .right-column {
+    width: 75%;
+  }
+}
+
 footer {
-  width: 80rem;
+  width: 100%;
   margin-inline: auto;
   padding-inline: var(--space-10);
   padding-top: 94px;
@@ -305,6 +328,16 @@ footer {
   float: left;
   width: 20%;
 }
+
+@media screen and (width <= 1000px) {
+  #copyright, #footerlinks {
+    width: 50%;
+  }
+
+  #footerlinks {
+    text-align: right;
+  }
+
 
 .stack > * + * {
   margin-top: var(--space-4);
