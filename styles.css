@@ -1,0 +1,246 @@
+/* =========================
+   Base Reset
+   ========================= */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+  font-style: normal;
+  font-optical-sizing: auto;
+  letter-spacing: .25rem;
+}
+
+
+/* =========================
+   Design Tokens
+   ========================= */
+
+:root {
+  /* Colors */
+  --color-bg: #FFFDF4;
+  --color-text: #2E2E2D;
+  --color-muted: #666666;
+  --color-accent: #826C0D;
+
+  /* Typography */
+  --font-sans: "Azeret Mono", monospace;
+
+
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.25rem;
+  --text-2xl: 1.5rem;
+
+  /* Spacing */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+  --space-10: 2.5rem;
+  --space-12: 3rem;
+}
+
+/* =========================
+   Base Styles
+   ========================= */
+
+.clear {clear: both;}
+
+body {
+  font-family: var(--font-sans);
+  font-size: var(--text-base);
+  color: var(--color-text);
+  background: var(--color-bg) url("images/Desktop-Home.png") 50% 0 no-repeat;
+}
+
+a {
+  color: var(--color-accent);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+strong {
+  font-weight: 600;
+}
+
+/* --------------------
+
+font weight choices
+Thin 100
+Thin 100 Italic
+ExtraLight 200
+ExtraLight 200 Italic
+Light 300
+Light 300 Italic
+Regular 400
+Regular 400 Italic
+Medium 500
+Medium 500 Italic
+SemiBold 600
+SemiBold 600 Italic
+Bold 700
+Bold 700 Italic
+ExtraBold 800
+ExtraBold 800 Italic
+Black 900
+Black 900 Italic
+
+-------------------- */
+
+
+
+/* =========================
+   Layout Utilities
+   ========================= */
+
+.container {
+  /*width: 1280px;*/
+  /*max-width: 74rem;*/
+  /*padding-inline: var(--space-8);*/
+  margin-inline: auto;
+  margin-top: 0;
+}
+
+/*.edge-to-edge {
+  background: #2E2E2D;
+}*/
+
+header {
+  width: 80rem;
+  margin-inline: auto;
+  padding-inline: var(--space-8);
+  padding-top: 94px;
+}
+
+header h1, h2, h3, h4 {
+  color: #FFFDF4;
+}
+
+header h1 {
+  font-weight: 200;
+  font-size: 2.25rem;
+  line-height: 2.4rem;
+}
+
+header h2 {
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 2.625rem;
+  padding-top: 30px;
+  padding-bottom: 153px;
+}
+
+header h3 {
+  font-weight: 200;
+  font-size: 2.2rem;
+  line-height: 2.6rem;
+  text-transform: uppercase;
+
+}
+header h4 {
+  font-weight: 300;
+  font-size: 0.875;
+}
+
+.logo a {
+  color: #DFBA16;
+}
+
+.logo {
+  padding-bottom: 148px;
+  width: 80%;
+  float: left;
+}
+
+nav {
+  width: 20%;
+  float: left;
+  font-weight: 100;
+  font-size: 2.4rem;
+  line-height: 2.625rem;
+  color: #DFBA16;
+  text-align: right;
+}
+
+.stack > * + * {
+  margin-top: var(--space-4);
+}
+
+.cluster {
+  display: flex;
+  gap: var(--space-4);
+  align-items: center;
+}
+
+.grid {
+  display: grid;
+  gap: var(--space-6);
+}
+
+/* =========================
+   Motion
+   ========================= */
+
+@media (prefers-reduced-motion: no-preference) {
+  * {
+    transition:
+      color 150ms ease,
+      background-color 150ms ease,
+      border-color 150ms ease,
+      transform 200ms ease;
+  }
+}
+
+/* =========================
+   Accessibility
+   ========================= */
+
+:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
