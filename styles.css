@@ -130,6 +130,7 @@ Black 900 Italic
   /*width: 1280px;*/
   /*max-width: 74rem;*/
   /*padding-inline: var(--space-8);*/
+  padding-inline: 1.25rem;
   margin-inline: auto;
   margin-top: 0;
 }
@@ -139,10 +140,7 @@ Black 900 Italic
 }
 
 header {
-  /*width: 80rem;*/
   width: 100%;
-  margin-inline: auto;
-  padding-inline: var(--space-10);
   padding-top: 94px;
   margin-bottom: 94px;
 }
@@ -216,7 +214,7 @@ section h2 {
   font-weight: 100;
   font-size: 2rem;
   line-height: 2.625rem;
-  letter-spacing: 0.044rem;
+  letter-spacing: 0.044rem; 
 }
 
 .callout {
