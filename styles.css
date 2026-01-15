@@ -241,8 +241,12 @@ cite {
 }
 
 section p {
-  font-size: 3rem;
-  line-height: 4.5rem;
+  padding-top: 1.875rem;
+  padding-bottom: 0.625rem;
+  font-weight: 400;
+  font-size: 1.325rem;
+  line-height: 2.7rem;
+  letter-spacing: 0.006rem;
 }
 
 hr {
