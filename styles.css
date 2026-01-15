@@ -143,6 +143,9 @@ header {
   width: 100%;
   padding-top: 94px;
   margin-bottom: 94px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
 }
 
 header h1, header h2, header h3, header h4 {
@@ -187,6 +190,7 @@ header h4 {
   padding-bottom: 154px;
   width: 80%;
   float: left;
+  max-width: 75ch;
 }
 
 @media screen and (width <= 420px) {
@@ -196,8 +200,6 @@ header h4 {
 }
 
 nav {
-  width: 20%;
-  float: left;
   text-align: right;
 }
 
@@ -243,6 +245,7 @@ cite {
   cite {
     font-size: 2.5rem;
     line-height: 4rem;
+    letter-spacing: 0.1rem;
   }
 }
 
