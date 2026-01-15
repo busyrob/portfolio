@@ -143,9 +143,6 @@ header {
   width: 100%;
   padding-top: 94px;
   margin-bottom: 94px;
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
 }
 
 header h1, header h2, header h3, header h4 {
@@ -182,14 +179,20 @@ header h4 {
   letter-spacing: .25rem;
 }
 
+.header-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
 .logo a {
   color: #DFBA16;
 }
 
 .logo {
   padding-bottom: 154px;
-  width: 80%;
-  float: left;
+  /*width: 80%; 
+  float: left; */
   max-width: 75ch;
 }
 
@@ -215,7 +218,7 @@ section {
   width: 100%;
   margin-inline: auto;
   /*padding-inline: var(--space-10);*/
-  padding-inline: clamp(1rem, 5vs, 2.5rem);
+  padding-inline: clamp(1rem, 5vw, 2.5rem);
 }
 
 section h2 {
