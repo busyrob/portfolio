@@ -189,6 +189,12 @@ header h4 {
   float: left;
 }
 
+@media screen and (width <= 420px) {
+  .logo {
+    padding-bottom: 94px;
+  }
+}
+
 nav {
   width: 20%;
   float: left;
@@ -235,8 +241,8 @@ cite {
 
 @media screen and (width <= 420px) {
   cite {
-    font-size: 3rem;
-    line-height: 4.5rem;
+    font-size: 2rem;
+    line-height: 3.5rem;
   }
 }
 
