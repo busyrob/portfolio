@@ -235,7 +235,8 @@ cite {
 
 @media screen and (width <= 420px) {
   cite {
-    padding-left: 0px;
+    font-size: 3rem;
+    line-height: 4.5rem;
   }
 }
 
