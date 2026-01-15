@@ -191,7 +191,7 @@ header h4 {
 
 @media screen and (width <= 420px) {
   .logo {
-    padding-bottom: 94px;
+    padding-bottom: 80px;
   }
 }
 
@@ -241,8 +241,8 @@ cite {
 
 @media screen and (width <= 420px) {
   cite {
-    font-size: 2rem;
-    line-height: 3.5rem;
+    font-size: 2.5rem;
+    line-height: 4rem;
   }
 }
 
