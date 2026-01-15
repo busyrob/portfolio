@@ -312,35 +312,34 @@ hr {
 footer {
   width: 100%;
   margin-inline: auto;
-  padding-inline: var(--space-10);
   padding-top: 94px;
   padding-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
 }
 
 #copyright {
   overflow-wrap: break-word;
   font-style: normal;
   font-optical-sizing: auto;
-  float: left;
-  width: 15%;
 }
 
 #footerlinks {
   overflow-wrap: break-word;
   font-style: normal;
   font-optical-sizing: auto;
-  float: left;
-  width: 20%;
 }
 
-@media screen and (width <= 1000px) {
+/* @media screen and (width <= 1000px) {
   #copyright, #footerlinks {
     width: 50%;
   }
 
   #footerlinks {
     text-align: right;
-  }
+  }*/
 
 
 .stack > * + * {
