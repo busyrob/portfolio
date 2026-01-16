@@ -13,6 +13,7 @@
 html, body {
   height: 100%;
   overflow-x: hidden;
+  font-synthesis: none;
 }
 
 body {
@@ -50,7 +51,6 @@ p, h1, h2, h3, h4, h5, h6 {
 
   /* Typography */
   --font-sans: "Azeret Mono", monospace;
-
 
   --text-xs: 0.75rem;
   --text-sm: 0.875rem;
@@ -127,10 +127,7 @@ Black 900 Italic
    ========================= */
 
 .container {
-  /*width: 1280px;*/
-  /*max-width: 74rem;*/
-  /*padding-inline: var(--space-8);*/
-  padding-inline: 1.25rem;
+  padding-inline: clamp(1rem, 5vw, 2.5rem);
   margin-inline: auto;
   margin-top: 0;
 }
@@ -145,24 +142,39 @@ header {
   margin-bottom: 94px;
 }
 
-header h1, header h2, header h3, header h4 {
+header h1, header h2, header h3, header h4, header h5, header h6 {
   color: #FFFDF4;
 }
 
-header h1 {
+header.home h1 {
   font-weight: 200;
   font-size: 2.25rem;
   line-height: 2.4rem;
   letter-spacing: .25rem;
 }
 
-header h2 {
+header.home h2 {
   font-weight: 400;
   font-size: 1.125rem;
   line-height: 2.2rem;
   padding-top: 32px;
   padding-bottom: 153px;
   letter-spacing: .05rem;
+}
+
+header.interior h1 {
+  font-weight: 100;
+  font-size: 64px;
+  line-height: 72px;
+  letter-spacing: .2rem;
+}
+
+header.interior h2 {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 42px;
+  padding-bottom: 72px;
+  letter-spacing: .1rem;
 }
 
 header h3 {
@@ -174,9 +186,23 @@ header h3 {
 }
 header h4 {
   font-weight: 300;
-  font-size: 0.875;
+  font-size: 0.875rem;
   line-height: 1.3rem;
   letter-spacing: .25rem;
+}
+
+h5 {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 42px;
+  letter-spacing: 0rem;
+}
+
+h6 {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 42px;
+  letter-spacing: 0rem;
 }
 
 .header-top {
@@ -189,10 +215,13 @@ header h4 {
   color: #DFBA16;
 }
 
-.logo {
+.home .logo {
   padding-bottom: 154px;
-  /*width: 80%; 
-  float: left; */
+  max-width: 75ch;
+}
+
+.interior .logo {
+  padding-bottom: 72px;
   max-width: 75ch;
 }
 
@@ -213,12 +242,11 @@ nav a {
   color: #DFBA16; 
 }
 
-
 section {
   width: 100%;
   margin-inline: auto;
   /*padding-inline: var(--space-10);*/
-  padding-inline: clamp(1rem, 5vw, 2.5rem);
+  /*padding-inline: clamp(1rem, 5vw, 2.5rem);*/
 }
 
 section h2 {
@@ -274,12 +302,29 @@ hr {
   clear: both;
   display: flex;
   gap:1rem;
+
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1.5rem;
 }
+
+@media (max-width: 700px) {
+  .project-logos {
+    flex-basis: 100%;
+  }
+}
+
+.project-logos img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 
 .left-column {
   float: left;
   /*width: 13%;*/
-  width: 3.5rem;
+  width: 8rem;
   flex-shrink: 0;
 }
 
@@ -289,12 +334,12 @@ hr {
 }
 
 .sideimage {
-  padding-left: 30px;
+  padding-left: 1.5rem;
 }
 
 @media screen and (width <= 420px) {
   .sideimage {
-    padding-left: 0px;
+    padding-left: 0rem;
   }
 }
 
