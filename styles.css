@@ -149,6 +149,7 @@ header {
 @media screen and (width <= 600px) {
   header {
     padding-top: 40px;
+    margin-bottom: 60px;
   }
 }
 
@@ -170,6 +171,12 @@ header.home h2 {
   padding-top: 32px;
   padding-bottom: 153px;
   letter-spacing: .05rem;
+}
+
+@media screen and (width <= 600px) {
+  header.home h2 {
+    padding-bottom: 60px;
+  }
 }
 
 header.interior h1 {
@@ -325,7 +332,7 @@ section li {
 }
 
 .callout {
-  padding: 84px 0 0 0;
+  padding: 70px 0 0 0;
   clear: both;
 }
 
@@ -349,8 +356,8 @@ blockquote {
 
 @media screen and (width <= 420px) {
   cite {
-    font-size: 2.5rem;
-    line-height: 4rem;
+    font-size: 1.7rem;
+    line-height: 3.4rem;
     letter-spacing: 0.1rem;
   }
 }
