@@ -232,6 +232,13 @@ h6 {
   max-width: 75ch;
 }
 
+@media screen and (width <= 420px) {
+  .home .logo {
+    padding-bottom: 60px;
+  }
+}
+
+
 .interior .logo {
   padding-bottom: 72px;
   max-width: 75ch;
@@ -256,6 +263,13 @@ nav a {
   font-size: 2.4rem;
   line-height: 2.625rem;
   color: #DFBA16; 
+}
+
+@media screen and (width <= 420px) {
+  nav a {
+    font-size: calc(var(--text-base) * 1.125);
+  line-height: 2.625rem; 
+  }
 }
 
 section {
