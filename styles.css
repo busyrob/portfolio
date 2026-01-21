@@ -470,7 +470,7 @@ hr {
 }
 
 .left-column img {
-  padding-top: 14px;
+  padding-top: 6px;
   float: left;
 }
 
@@ -492,7 +492,7 @@ hr {
 .right-column h6 {
   font-weight: 700;
   font-size: calc(var(--text-base) * 1.125);
-  line-height: 2.625rem;
+  line-height: 1.9rem;
 }
 
 .right-column p {
