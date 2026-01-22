@@ -153,7 +153,7 @@ header {
   }
 }
 
-header h1, header h2, header h3, header h4, header h5, header h6 {
+header h1, header h2, .header-top h3, .header-top h4, header h5, header h6 {
   color: #FFFDF4;
 }
 
@@ -217,14 +217,14 @@ header.interior h2 {
 }
 
 
-header h3 {
+.header-top h3 {
   font-weight: 200;
   font-size: 2.2rem;
   line-height: 2.6rem;
   text-transform: uppercase;
   letter-spacing: .25rem;
 }
-header h4 {
+.header-top h4 {
   font-weight: 300;
   font-size: 0.875rem;
   line-height: 1.3rem;
@@ -264,9 +264,20 @@ h6 {
 }
 
 .header-top {
+  padding-inline: clamp(1rem, 5vw, 2.5rem);
+  margin-inline: auto;
+  margin-top: 0;
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
+  background: #2E2E2D; 
+  position: sticky;
+  top: 0;
+  z-index: 20;
+
+  padding-block: var(--space-4);
+
+
 }
 
 .logo a {
@@ -289,6 +300,7 @@ h6 {
   padding-bottom: 72px;
   max-width: 75ch;
 }
+
 
 .project-summary {
   padding-bottom: 80px;
